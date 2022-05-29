@@ -1,0 +1,59 @@
+/* CSS Reset  */
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background: linear-gradient(to bottom, #f9544c 50%, #090c31 50%);
+}
+.calculator{
+    height: inherit;
+    width: 41vw;
+    margin: auto;
+    padding: 0;
+}
+.child{
+    height: 41vh;
+    width: inherit;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+#equal{
+    height: 10vh;
+    width: inherit;
+    margin-right: 1rem;
+}
+.buttons{
+    grid-gap: 0rem;
+}
+@media only screen and (max-width: 552px) {
+    .calculator{
+        height: 79vh;
+        width: 66vw;
+    }
+ }
+@media only screen and (max-width: 352px) {
+    .calculator{
+        width: 85vw;
+        height: 79vh;
+    }
+ }
+@media only screen and (max-width: 266px) {
+    .calculator{
+        width: 39vh;
+    }
+ }
+@media only screen and (max-width: 246px) {
+    .calculator{
+        height: 71vh;
+    }
+    body{
+        height: 101vh;
+    }
+ }
+@media screen and (min-height: 475px) {
+    .calculator{
+        height: 80vh;
+    }
+}
