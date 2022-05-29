@@ -1,6 +1,4 @@
 console.log("This is the combined project");
-alert("fix the period pug");
-alert("make it responsive");
 
 let string = "";
 let buttons = document.querySelectorAll('.input-button');
