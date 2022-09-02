@@ -1,0 +1,71 @@
+*, html{
+    padding: 0;
+    margin: 0;
+}
+
+
+.container{
+    /* border: 2px solid black; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(mylifeimg.jpg) no-repeat no-repeat center center/cover;
+}
+
+li{
+  list-style: none;
+}
+.li_none{
+  visibility: hidden;
+}
+
+
+
+@media only screen and (max-width: 1326px) {
+  .container::before{
+    height: 117vh;
+  }
+
+  .container{
+    height: 117vh;
+  }
+}
+@media only screen and (max-width: 310px) {
+  .container::before{
+    height: 124vh;
+  }
+
+  .container{
+    height: 124vh;
+  }
+}
+@media only screen and (max-height: 567px) {
+  .container::before{
+    height: 280vh;
+  }
+
+  .container{
+    height: 278vh;
+  }
+}
+@media only screen and (max-height: 239px) {
+  .container::before{
+    height: 289vh;
+  }
+
+  .container{
+    height: 289vh;
+  }
+}
+
