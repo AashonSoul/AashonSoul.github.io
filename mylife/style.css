@@ -25,6 +25,8 @@
 
 li{
   list-style: none;
+  margin: auto;
+
 }
 .li_none{
   visibility: hidden;
@@ -50,6 +52,18 @@ li{
     height: 124vh;
   }
 }
+@media only screen and (max-width: 370px) {
+  .container::before{
+    height: 124vh;
+  }
+
+  .container{
+    height: 124vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 @media only screen and (max-height: 567px) {
   .container::before{
     height: 280vh;
@@ -66,6 +80,15 @@ li{
 
   .container{
     height: 289vh;
+  }
+}
+@media only screen and (max-width: 602px) {
+  .container::before{
+    height: 124vh;
+  }
+
+  .container{
+    height: 124vh;
   }
 }
 
